@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Encriptador de textos</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/imgs/segurity_prueba.svg"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container-header">
+        <div class="header">
+          <a
+            href="https://app.aluracursos.com/user/preadrianrodriguez"
+            target="_blank"
+          >
+            <img class="logo" src="./assets/imgs/alura.svg" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="container">
+        <section class="left" id="left">
+          <textarea
+            class="input-textarea"
+            id="text-input"
+            placeholder="Ingrese el texto aquí"
+            autofocus
+          ></textarea>
+          <div class="content-buttons">
+            <span class="info">
+              <img src="./assets/imgs/init.svg" alt="advertencia" />
+              Solo letras minúsculas y sin acentos
+            </span>
+            <div class="buttons">
+              <button id="button-encrypt" class="button-encrypt">
+                Encriptar
+              </button>
+              <button id="button-decrypt" class="button-decrypt">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="right" id="right">
+          <img
+            id="mono"
+            class="mono"
+            src="./assets/imgs/munheco.svg"
+            alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar."
+          />
+          <textarea
+            id="final-text"
+            class="final-text"
+            placeholder="Ningún mensaje fue encontrado"
+          ></textarea>
+          <p id="text-info" class="info">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+          <button class="button-copy bn-hide" id="button-copy">Copiar</button>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <p class="creator">
+        Desarrollado por
+        <a href="https://github.com/1frencho" target="_blank" class="user">
+          Marcos Alfaro
+        </a>
+      </p>
+      <div>
+        <a href="https://github.com/1frencho" target="_blank">
+          <img class="links" src="./assets/imgs/github.svg" />
+        </a>
+        <a href="https://www.linkedin.com/in/marcosalf/" target="_blank">
+          <img class="links" src="./assets/imgs/linkedin.svg" />
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
